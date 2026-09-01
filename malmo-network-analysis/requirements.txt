@@ -1,0 +1,13 @@
+# Network Analyses White Malmo — notebook environment (Python 3.11)
+osmnx>=2.0
+geopandas
+shapely
+pyogrio
+networkx
+pandas
+numpy
+matplotlib
+mapclassify
+# notebook / kernel
+ipykernel
+jupyterlab
