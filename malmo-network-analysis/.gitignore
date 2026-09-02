@@ -3,4 +3,11 @@ __pycache__/
 .ipynb_checkpoints/
 cache/
 .DS_Store
-OUT/
+
+# Generated results: rebuilt by re-running a notebook, so not tracked - otherwise
+# every re-run is a diff of regenerated binaries. The two figures the READMEs embed
+# are the exception; a README image has to be in the repo to render.
+# Note "OUT/*", not "OUT/": git cannot re-include a file whose parent dir is excluded.
+OUT/*
+!OUT/triangeln_cycling_fragmentation_map.png
+!OUT/triangeln_supermarket_trip_load.png
