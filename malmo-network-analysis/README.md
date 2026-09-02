@@ -26,11 +26,18 @@ together.
 
 ```
 IN/     Color Pallette White Arkitekter.png — source for the notebook's design tokens
-WORK/   Network Analyses White Malmo.ipynb — the analysis
-OUT/    generated results (committed as a reference run)
+        240604_GML_Bao_Libny.ipynb — the Colab notebook this work grew out of, kept
+        as provenance rather than to run
+WORK/   Network Analyses White Malmo.ipynb — cycling fragmentation and missing links
+        Nearest-facility and closest-facility allocation (schools, supermarkets).ipynb
+OUT/    generated results — rebuilt by re-running a notebook
 ```
 
-`cache/` (OSMnx's HTTP cache), `.venv/` and `.ipynb_checkpoints/` are gitignored.
+`OUT/` is gitignored: every file in it follows from the notebooks, so tracking them made
+each re-run a diff of regenerated binaries. Two figures are excepted because the READMEs
+embed them, and a README image has to be in the repo to render —
+`triangeln_cycling_fragmentation_map.png` and `triangeln_supermarket_trip_load.png`.
+`cache/` (OSMnx's HTTP cache), `.venv/` and `.ipynb_checkpoints/` are gitignored too.
 
 ## Outputs
 
